@@ -21,7 +21,7 @@ class St < Formula
     # https://docs.brew.sh/rubydoc/Formula.html#std_configure_args-instance_method
     # system "./configure", "--disable-silent-rules", *std_configure_args
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    system "tar", "-xzvf", "systemctl-tui-x86_64-unknown-linux-musl.tar.gz"
+    # system "tar", "-xzvf", "systemctl-tui-x86_64-unknown-linux-musl.tar.gz"
     system "mv", "systemctl-tui", "st"
     bin.install "st"
   end
