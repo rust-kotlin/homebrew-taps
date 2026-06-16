@@ -1,12 +1,12 @@
 cask "ashell" do
-  version "0.4.5-rc.2"
-  
+  version "0.4.5"
+
   on_arm do
-    sha256 "708ca741cd739255f379a6fa08088a11bff1ceac535c2e19f8f0c71b33f53fc3"
+    sha256 "69eea8cb1e177a86595d309f2b98db1c60b0c25ac3ab686de0ee8fd4a84288fa"
     url "https://github.com/rust-kotlin/ashell/releases/download/v#{version}/ashell-v#{version}-macos-aarch64.zip"
   end
   on_intel do
-    sha256 "32d7b1ee11881cfbbbbca64daed486f816030de6543547b946ba290e8a07ee8e"
+    sha256 "fd1677e5b8b818ba64bc1c85686ec8a47638f8fa23690504b02816ea1e2f7ac8"
     url "https://github.com/rust-kotlin/ashell/releases/download/v#{version}/ashell-v#{version}-macos-x86_64.zip"
   end
 
@@ -24,8 +24,11 @@ cask "ashell" do
   end
 
   caveats <<~EOS
-    ashell is not notarized. The installation includes a postflight script
+    ashell uses ad-hoc signing. The installation includes a postflight script
     that removes the 'com.apple.quarantine' attribute from the application
     to allow it to run. This will require your administrator password.
+
+    ashell 采用本地签名。安装程序包含一个后置脚本，用于移除应用程序的
+    'com.apple.quarantine' 属性以允许其运行。这需要您的管理员密码。
   EOS
 end
