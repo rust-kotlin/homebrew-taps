@@ -1,12 +1,12 @@
 cask "ashell" do
-  version "0.4.5-fix2"
+  version "0.4.6"
 
   on_arm do
-    sha256 "a6605425a75aff9704e5041961aaa243e5832f00a2333f7f6ec03c08f5781fb6"
+    sha256 "a2631930b4cc07ccf1854422d68d934a780a64e54976285a25f0f85bdaf61640"
     url "https://github.com/rust-kotlin/ashell/releases/download/v#{version}/ashell-v#{version}-macos-aarch64.zip"
   end
   on_intel do
-    sha256 "413af22a14aa9f884d8c12bdf08fd5b520e103253f646124ded8bd6a18d8e279"
+    sha256 "d55123d2e2e7c4743b7b08fda4690fdfdd1098dfec49bef38df65783bb1db896"
     url "https://github.com/rust-kotlin/ashell/releases/download/v#{version}/ashell-v#{version}-macos-x86_64.zip"
   end
 
